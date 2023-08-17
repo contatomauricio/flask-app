@@ -25,7 +25,7 @@ def terapeuta_resposta(pergunta, historico):
 def index():
     return render_template('index.html')
 
-@app.route('/chatbot', methods=['POST'])
+@app.route('/', methods=['POST'])
 def terapeuta():
     pergunta = request.form['pergunta']
     
