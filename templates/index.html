@@ -83,7 +83,7 @@
         }
 
         function loadingResposta(){
-            $("#input-pergunta").val('Olá, sou a Eliza, por favor aguarde, irei resonder sua pergnta').prop('readonly', true);
+            $("#input-pergunta").val('Olá, sou a Eliza, por favor aguarde, irei responder sua pergunta').prop('readonly', true);
             $("#btn-envia-pergunta").prop('disabled', true);
         }
 
@@ -96,7 +96,7 @@
             if(pergunta){
                 renderizarWidgetMensagemChat('usuario', pergunta);
                 loadingResposta();
-                $.getJSON('http://localhost:5000/chatbot', {
+                $.getJSON('http://localhost:5000/', {
                     pergunta: pergunta
                 }, function(data) {
                     console.log(data);
