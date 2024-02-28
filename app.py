@@ -5,7 +5,7 @@ import openai
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = "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"
+openai.api_key = ""
 
 historico = []
 
